@@ -7,7 +7,7 @@ module.exports.run = async (client, message, argument) => {
         if (!message.guild) return;
       
       
-        if (message.content.startsWith('!ban')) {
+        if (message.content.startsWith('.ban')) {
           const user = message.mentions.users.first()
         
           if (user) {
