@@ -25,13 +25,13 @@ module.exports.run = async (client, message, args) => {
     .setColor("#f00c0c")
     .setTimestamp()
     .addFields(
-        {name:" ** Dienst **" , value:(dienst)},
-        {name:" ** Type-Training **" , value: (type) },
-        {name:" ** Host **" , value:` ${message.author} `},
-        {name:" ** Co-Host **" , value: (co) },
-        {name:" ** Datum **" , value: (datum) },
-        {name:" ** Tijd **" , value: (tijd) },
-        {name:" ** Opmerking **" , value:` ${opmerking}`},
+        {name:" **Dienst **" , value:(dienst)},
+        {name:" **Type-Training **" , value: (type) },
+        {name:" **Host **" , value:` ${message.author} `},
+        {name:" **Co-Host **" , value: (co) },
+        {name:" **Datum **" , value: (datum) },
+        {name:" **Tijd **" , value: (tijd) },
+        {name:" **Opmerking **" , value:` ${opmerking}`},
                 
     )
     .setThumbnail('')
