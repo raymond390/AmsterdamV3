@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
 
      try {
 
-         var text = "Bot Gemaakt door **Raymond#1362** \n**Defensie Roleplay**\n \n ";
+         var text = "Bot Gemaakt door **Raymond#1362** \n\nDSI V3\n ";
 
          message.author.send(text);
 
@@ -31,7 +31,7 @@ module.exports.run = async (client, message, args) => {
     });
 
     var response = "\n\n";          //normaal bot commands
-    var general = "\n";
+    var general = "\n**Admin Commands**\n";
     var info = "\n**Bot commands**\n";           // normaal informatie
 
     for (let i = 0; i < commandList.length; i++) {

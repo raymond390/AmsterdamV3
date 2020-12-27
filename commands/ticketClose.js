@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
 
     if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Geen perms");
     
-    const categoryID = "790522631941128202";
+    const categoryID = "792756429869678613";
 
     if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("sorry jij kan dit niet");
 
@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
             .setFooter("Ticket gesloten");
 
         // Channel voor logging
-        var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "log");
+        var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "「📖」staff-logs");
         if (!ticketChannel) return message.reply("Kanaal bestaat niet");
 
         ticketChannel.send(embedCreateTicket);
@@ -37,6 +37,6 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "close",
-    category: "Informatie",
+    category: "Algemeen",
     description: "closed een ticket",
 }

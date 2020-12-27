@@ -5,7 +5,8 @@ module.exports.run = async (client, message, argument) => {
 
     if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Geen perms");
     
-    const categoryID = "790522631941128202";
+    const categoryID = "792756429869678613";
+    var claim = message.guild.member(message.mentions.users.first());
 
     
 
@@ -14,12 +15,12 @@ module.exports.run = async (client, message, argument) => {
     var botEmbed = new discord.MessageEmbed()
     .setTitle('Claim')
     .setDescription(`${message.author} Heeft deze ticket Geclaimed`)
-    .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')
+    .setThumbnail('')
     .setImage('')
     .setTimestamp()
-    .setFooter('Defensie', '');
+    .setFooter('Hoi', '');
 
-    
+    message.channel.setTopic(` ${message.author}: Heeft deze ticket geclaimed`)    
 
 return message.channel.send(botEmbed);
 
@@ -33,5 +34,5 @@ return message.channel.send(botEmbed);
 module.exports.help = {
     name: "claim",
     description: "Geeft al de verschillende commands",
-    category: "Informatie"
+    category: "Algemeen"
 }

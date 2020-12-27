@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    const categoryID = "790522631941128202";
+    const categoryID = "792756429869678613";
 
     var userName = message.author.username;
     var userDiscriminator = message.author.discriminator;
@@ -53,8 +53,8 @@ module.exports.run = async (client, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Hoi ${message.author.username}`)
                         .setDescription("Zet hier je bericht / vraag")
-                        .setThumbnail("https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo")
-                        .setFooter('Defensie', '');
+                        .setThumbnail("")
+                        .setFooter('', '');
 
                     settedParent.send(embedParent);
                     
@@ -71,6 +71,6 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "ticket",
-    category: "Informatie",
+    category: "Algemeen",
     description: "Maakt een support kanaal aan",
 }
